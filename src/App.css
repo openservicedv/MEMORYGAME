@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.game-wrap {
+  margin-top: 15px;
+  width: 100vw;
+  height: 100vh;
+  /*border: #040504 solid 1px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.game-box {
+  margin-top: 25px;
+  width: 800px;
+  height: 600px;
+  border: #3b3434 solid 1px;
+  display: grid;
+  justify-content: space-around;
+  /*grid-template-columns: 100px 100px 100px 100px;*/
+  /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+  grid-template-columns: repeat(auto-fill, 200px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button {
+  width: 200px;
+  height: 200px;
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  /*background: #d8dfef;*/
+  /*box-shadow: #040504 4px 4px 10px;*/
+  /*color: #1f2c49;*/
+  border: #3b3434 solid 1px;
+  /*border-radius: 5px;*/
+  /*padding: 5px;*/
+  /*margin: 5px;*/
+}
+
+.text {
+  /*border: #706363 solid 1px;*/
+  margin-top: 10px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.restart {
+  width: 80px;
+  height: 40px;
+  background: #dacf52;
+  box-shadow: #040504 2px 2px 5px;
+  color: #1e1a1a;
+  border: #706363 solid 1px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: normal;
+  /*margin-bottom: 25px;*/
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.restart-pushed {
+  width: 80px;
+  height: 40px;
+  background: #dacf52;
+  box-shadow: #706363 1px 1px 1px;
+  color: #1e1a1a;
+  border: #706363 solid 1px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: lighter;
 }
+
